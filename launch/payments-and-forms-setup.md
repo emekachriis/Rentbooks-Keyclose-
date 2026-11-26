@@ -1,5 +1,7 @@
 # Setting up payment (Lemon Squeezy) and the upload form (Tally)
 
+> **Stripe alternative:** a tested Stripe set-up (checkout, invoices and optional crypto) is in `stripe/README.md`. It needs Stripe to accept your business for live payments. Use one payment provider on the site, not both.
+
 Do these before filling `{{CHECKOUT_URL}}` and `{{INTAKE_URL}}` on the site. Menu names in these apps change; if a button is named differently, look for the closest match.
 
 ---
