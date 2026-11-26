@@ -32,7 +32,7 @@ Pricing is $149 for the first property plus $49 for each extra, which a single p
 - **Product name:** "2026 year-end rental books"
 - **Description** (paste this): "One reconciled, per-property workbook (Excel plus a PDF summary) from your 2026 property manager statements and bank export, for your CPA. Delivered within 5 business days of complete documents. One property = one address. Bookkeeping prepared for your CPA: not tax advice, tax preparation or tax filing."
 - **Type:** single payment (not a subscription).
-- **Confirmation / receipt message:** "Thanks for your order. Next step: upload your documents here: [your Tally link]. Your workbook arrives within 5 business days of complete documents. Questions: hello@[your domain]"
+- **Confirmation / receipt message:** "Thanks for your order. Next step: upload your documents here: [your Tally link]. Your workbook arrives within 5 business days of complete documents. Questions: hello@keyclosebooks.com"
 - **Checkout link** for `{{CHECKOUT_URL}}`: use the product's share/checkout link, then **open it yourself and check the buyer can choose the number of properties**. If your link only ever opens one variant, tell Claude, and the "Get started" button can link to a small price picker instead.
 
 ## 2. Tally form

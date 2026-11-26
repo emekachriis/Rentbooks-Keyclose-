@@ -6,7 +6,6 @@
   PLACEHOLDERS: replace every one before deploying. Check with:  grep -n "{{" site/index.html
     {{CHECKOUT_URL}}   Lemon Squeezy checkout link
     {{INTAKE_URL}}     Tally intake form link
-    {{DOMAIN}}         your domain, e.g. keyclose.com (no https://, no trailing slash). Also makes the email hello@{{DOMAIN}}
   Visible text placeholders are wrapped in <span class="ph"> (dashed outline) so they are easy to spot.
 -->
 <html lang="en-US">
@@ -15,14 +14,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Keyclose: your PM statements, turned into one workbook your CPA can use</title>
 <meta name="description" content="Year-end bookkeeping for US rental owners with outside property managers. A year of PM statements and your bank export, turned into one reconciled per-property workbook for your CPA. $149 first property, $49 each extra. Not tax advice.">
-<link rel="canonical" href="https://{{DOMAIN}}/">
+<link rel="canonical" href="https://keyclosebooks.com/">
 <meta name="theme-color" content="#0a2e0e">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Keyclose">
 <meta property="og:title" content="Your PM statements, turned into one workbook your CPA can use">
 <meta property="og:description" content="Year-end bookkeeping for US rental owners. 2026 books, $149 first property, $49 each extra, 5 business days. Not tax advice.">
-<meta property="og:url" content="https://{{DOMAIN}}/">
-<meta property="og:image" content="https://{{DOMAIN}}/img/og-image.png">
+<meta property="og:url" content="https://keyclosebooks.com/">
+<meta property="og:image" content="https://keyclosebooks.com/img/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Crops of the sample workbook, with fictional data">
@@ -292,7 +291,7 @@ footer{margin-top:64px;border-top:1px solid var(--mid);padding:32px 0 48px}
     </details>
     <details id="about">
       <summary>Who are you?</summary>
-      <div class="ans"><p>I'm Chris. I do one thing: turn property manager statements into a reconciled workbook your CPA can use. I work only from the files you send, check every month against your bank, and list anything I can't resolve on the Exceptions sheet for your CPA rather than guessing. You deal with me directly, from your first email to delivery.</p><p>You can reach me at <a href="mailto:hello@{{DOMAIN}}"><span class="ph">hello@{{DOMAIN}}</span></a>.</p></div>
+      <div class="ans"><p>I'm Chris. I do one thing: turn property manager statements into a reconciled workbook your CPA can use. I work only from the files you send, check every month against your bank, and list anything I can't resolve on the Exceptions sheet for your CPA rather than guessing. You deal with me directly, from your first email to delivery.</p><p>You can reach me at <a href="mailto:hello@keyclosebooks.com">hello@keyclosebooks.com</a>.</p></div>
     </details>
     <details>
       <summary>Will you prepare or file my tax return?</summary>
@@ -306,7 +305,7 @@ footer{margin-top:64px;border-top:1px solid var(--mid);padding:32px 0 48px}
   <div class="foot">
     <div><a class="wordmark" href="#">Keyclose</a></div>
     <div><h3>Service</h3><ul><li><a href="#sample">Sample</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#faq">FAQ</a></li></ul></div>
-    <div><h3>Company</h3><ul><li><a href="#about">About</a></li><li><a href="mailto:hello@{{DOMAIN}}">Contact <span class="ph">hello@{{DOMAIN}}</span></a></li></ul></div>
+    <div><h3>Company</h3><ul><li><a href="#about">About</a></li><li><a href="mailto:hello@keyclosebooks.com">Contact hello@keyclosebooks.com</a></li></ul></div>
     <div><h3>Legal</h3><ul><li><a href="#privacy">Privacy</a></li><li><a href="#price">Terms</a></li><li><a href="#not-tax-advice">Not tax advice</a></li></ul></div>
   </div>
   <p class="fine">Bookkeeping prepared for your CPA. Not tax advice, tax preparation or tax filing. Workbooks are compiled from the statements and bank exports you supply and are not audited. Your CPA decides how every item is reported. All figures shown on this page are from a sample workbook with fictional data.</p>

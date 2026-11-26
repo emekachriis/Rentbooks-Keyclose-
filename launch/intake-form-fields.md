@@ -41,7 +41,7 @@ Field 14 options (exact wording):
 
 ## Form settings
 
-- **Thank-you page:** "Thanks. I've got your files and will confirm within one business day whether anything is missing. Questions: hello@{{DOMAIN}}"
+- **Thank-you page:** "Thanks. I've got your files and will confirm within one business day whether anything is missing. Questions: hello@keyclosebooks.com"
 - **Self email notifications:** on, to your email, so you know the moment a client submits.
 - **Respondent email:** optional. If you use it, copy the thank-you text into it.
 - **Close form / limit responses:** off.

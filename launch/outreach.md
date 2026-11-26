@@ -11,15 +11,26 @@ Rules for every message:
 
 ---
 
+## 0. Before keyclosebooks.com is live
+
+You can start conversations before the domain, checkout or form exist, because the first message only offers a sample. Until the domain works:
+
+- **Share the sample PDF as an attachment** (`site/sample-rental-books-2026.pdf`), or via `https://<project>.pages.dev/sample-rental-books-2026.pdf` once Cloudflare Pages is set up (DEPLOY.md Step 2; this needs no domain). Don't send a keyclosebooks.com link yet: it won't open.
+- **Don't publish hello@keyclosebooks.com** until Email Routing works (DEPLOY.md Step 4b), or replies will bounce. Reply from your own email meanwhile.
+- **Don't take money** until Lemon Squeezy is approved and payouts are confirmed. If someone says yes, tell them you'll send the checkout link within a day or two, and that documents are needed in January once December's statement is out.
+- **Cold email** (emailing people who haven't contacted you) to US recipients falls under the CAN-SPAM Act: a truthful subject line, your physical postal address, and a clear way to opt out, honoured promptly. Replying to someone's public post, or emailing someone who wrote to you first, is the safer start.
+
+---
+
 ## 1. The DM (reply to a post about PM statements and taxes)
 
 > Hi [first name], saw your post about [their PM statements / getting numbers together for your CPA]. I'm taking five owners this month for 2026 year-end books: you send your PM statements and a bank export once December's statement is in, and I return one reconciled, per-property workbook your CPA can use for Schedule E. It's bookkeeping, not tax prep. $149 for the first property, $49 each extra. Want to see a sample?
 
-If they say yes, send the sample PDF link (`https://{{DOMAIN}}/sample-rental-books-2026.pdf`) and nothing else. Let the sample do the work.
+If they say yes, send the sample PDF link (`https://keyclosebooks.com/sample-rental-books-2026.pdf`) and nothing else. Let the sample do the work.
 
 ## 2. Follow-up (once, 4 to 5 days later, only if they didn't reply)
 
-> Hi [first name], just following up once. Here's the sample workbook in case it's useful, whether or not you use me: https://{{DOMAIN}}/sample-rental-books-2026.pdf. Happy to answer any questions about it.
+> Hi [first name], just following up once. Here's the sample workbook in case it's useful, whether or not you use me: https://keyclosebooks.com/sample-rental-books-2026.pdf. Happy to answer any questions about it.
 
 Then stop. One follow-up, never two.
 
@@ -27,7 +38,7 @@ Then stop. One follow-up, never two.
 
 > Hi [name], I run a small done-for-you service that turns a rental owner's property manager statements and bank export into one reconciled, per-property workbook: ledgers with gross rent and every fee kept separate, a bank tie-out, an exceptions list and Schedule E line totals for you to confirm. It's bookkeeping only. I don't give tax advice or prepare returns, so the return stays entirely with you.
 >
-> If you have landlord clients who send you a pile of PM PDFs every February, I'd be glad to show you a sample workbook to see whether the format would save you time: https://{{DOMAIN}}/sample-rental-books-2026.pdf
+> If you have landlord clients who send you a pile of PM PDFs every February, I'd be glad to show you a sample workbook to see whether the format would save you time: https://keyclosebooks.com/sample-rental-books-2026.pdf
 >
 > $149 for the first property, $49 each extra, paid by the owner. No referral fees, no catch: I'd just like the format to be useful to the person preparing the return.
 
