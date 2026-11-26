@@ -48,3 +48,6 @@ python3 build_workbook.py --template-only --properties "Oak St Duplex" "Elm Ave 
 3. Type the bank deposits into the Bank tie-out. Log every shaded difference on Exceptions.
 4. Enter owner-paid expenses from the bank export in the Schedule E map's Owner-paid column, and log each one on Exceptions.
 5. Run `python3 verify.py <file>`: 0 errors, and every difference has an exception.
+6. Run `python3 export.py <file>` to make `<file>-summary.pdf` (Summary + Schedule E map) to send with the workbook.
+
+Full routine, from intake to file deletion: `launch/delivery-checklist.md`. Keep client files in `clients/` (ignored by Git) or outside the repo.

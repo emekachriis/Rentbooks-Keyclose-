@@ -1,0 +1,6 @@
+# Client files NEVER go in this repo (it is public). Keep them in clients/ or outside the repo.
+clients/
+*.client.xlsx
+.DS_Store
+__pycache__/
+~$*.xlsx

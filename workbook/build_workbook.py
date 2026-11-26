@@ -587,6 +587,7 @@ def build(path, ctx, meta, props, exceptions, contractors, owner_paid):
                 if c.font is not None and c.font.name != F:
                     c.font = Font(name=F, size=c.font.size or 10, bold=c.font.bold,
                                   italic=c.font.italic, color=c.font.color)
+    Path(path).parent.mkdir(parents=True, exist_ok=True)
     wb.properties.title = f"Year-End Rental Books {YEAR}"
     wb.properties.subject = DISCLAIMER_SHORT
     wb.save(path)

@@ -4,6 +4,10 @@ Export the (already recalculated) sample workbook to:
   exports/sample-summary-schedule-e.pdf   Summary + Schedule E map only
   exports/shot-*.png                      website screenshots
 
+Per client (PDF summary only, written next to the workbook):
+  python3 export.py ../clients/smith/smith-rental-books-2026.xlsx
+  -> ../clients/smith/smith-rental-books-2026-summary.pdf   (Summary + Schedule E map)
+
 Needs LibreOffice (soffice) and poppler (pdftoppm); ImageMagick is optional (trims margins).
 Run build_workbook.py and the recalc step first (see README.md).
 """
@@ -47,7 +51,21 @@ def to_pdf(xlsx, pdf):
         shutil.move(str(Path(td) / (Path(xlsx).stem + ".pdf")), pdf)
 
 
+def client_pdf(xlsx):
+    xlsx = Path(xlsx).resolve()
+    out = xlsx.with_name(xlsx.stem + "-summary.pdf")
+    with tempfile.TemporaryDirectory() as td:
+        tmp = Path(td) / (xlsx.stem + "-summary.xlsx")
+        hide_sheets(xlsx, tmp, {"Summary", "Schedule E map"})
+        to_pdf(tmp, out)
+    print("wrote", out)
+
+
 def main():
+    import sys
+    if len(sys.argv) > 1:
+        client_pdf(sys.argv[1])
+        return
     OUT.mkdir(exist_ok=True)
     with tempfile.TemporaryDirectory() as td:
         tmp = Path(td) / "sample-summary-schedule-e.xlsx"
