@@ -79,4 +79,4 @@ Delete everything for this client:
 
 ## Refunds
 
-Follow the refund policy you publish on the site (`{{REFUND_POLICY}}`). Issue refunds from the order page in the Lemon Squeezy dashboard, then run section F for that client.
+Policy on the site: full refund any time before you start on the files; once started, a full refund if you can't deliver a usable workbook. Issue refunds from the order page in the Lemon Squeezy dashboard, then run section F for that client.

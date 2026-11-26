@@ -15,4 +15,4 @@ Two rules all five follow:
 | 4 | **Rentclose** | rentclose.com (fallback: rentclosebooks.com) | Year-end close for rental owners. Plain and descriptive. |
 | 5 | **Cleansheet Rentals** | cleansheetrentals.com | What the CPA receives: a clean sheet. Friendly, not technical. |
 
-Once you've chosen one, replace `{{BRAND}}` in `site/index.html` (5 places). The workbook titles say "Year-End Rental Books", which is a description, not a brand, so they can stay as they are.
+**Chosen: Keyclose** (already on the site). Domain not bought yet: check keyclose.com first, with keyclosebooks.com as the fallback. The workbook titles say "Year-End Rental Books", which is a description, not a brand, so they can stay as they are.

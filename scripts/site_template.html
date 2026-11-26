@@ -4,25 +4,21 @@
   Edit the template, then run:  python3 scripts/build_site.py
 
   PLACEHOLDERS: replace every one before deploying. Check with:  grep -n "{{" site/index.html
-    {{BRAND}}          brand name
     {{CHECKOUT_URL}}   Lemon Squeezy checkout link
     {{INTAKE_URL}}     Tally intake form link
-    {{EMAIL}}          contact email address
-    {{DOMAIN}}         your domain, e.g. example.com (no https://, no trailing slash)
-    {{REFUND_POLICY}}  your refund policy, one or two sentences
-    {{BIO}}            two or three sentences about you
+    {{DOMAIN}}         your domain, e.g. keyclose.com (no https://, no trailing slash). Also makes the email hello@{{DOMAIN}}
   Visible text placeholders are wrapped in <span class="ph"> (dashed outline) so they are easy to spot.
 -->
 <html lang="en-US">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{BRAND}}: your PM statements, turned into one workbook your CPA can use</title>
+<title>Keyclose: your PM statements, turned into one workbook your CPA can use</title>
 <meta name="description" content="Year-end bookkeeping for US rental owners with outside property managers. A year of PM statements and your bank export, turned into one reconciled per-property workbook for your CPA. $149 first property, $49 each extra. Not tax advice.">
 <link rel="canonical" href="https://{{DOMAIN}}/">
 <meta name="theme-color" content="#0a2e0e">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="{{BRAND}}">
+<meta property="og:site_name" content="Keyclose">
 <meta property="og:title" content="Your PM statements, turned into one workbook your CPA can use">
 <meta property="og:description" content="Year-end bookkeeping for US rental owners. 2026 books, $149 first property, $49 each extra, 5 business days. Not tax advice.">
 <meta property="og:url" content="https://{{DOMAIN}}/">
@@ -187,7 +183,7 @@ footer{margin-top:64px;border-top:1px solid var(--mid);padding:32px 0 48px}
 <div class="wrap">
 
 <header class="mast">
-  <a class="wordmark" href="#"><span class="ph">{{BRAND}}</span></a>
+  <a class="wordmark" href="#">Keyclose</a>
   <nav aria-label="Sections">
     <a href="#sample">Sample</a><a href="#pricing">Pricing</a><a href="#how">How it works</a><a href="#faq">FAQ</a>
   </nav>
@@ -268,13 +264,17 @@ footer{margin-top:64px;border-top:1px solid var(--mid);padding:32px 0 48px}
       <summary>My properties have different property managers. Is that a problem?</summary>
       <div class="ans"><p>No. Each property gets its own ledger whatever its manager's statement looks like, and the bank tie-out matches each manager's payments separately.</p></div>
     </details>
+    <details id="property">
+      <summary>What counts as a property?</summary>
+      <div class="ans"><p>One property is one address. A duplex or fourplex at a single address counts as one property, the same way it takes one column on Schedule E. Three addresses cost $149 + $49 + $49 = $247.</p></div>
+    </details>
     <details id="refunds">
       <summary>What is your refund policy?</summary>
-      <div class="ans"><p><span class="ph">{{REFUND_POLICY}}</span></p></div>
+      <div class="ans"><p>Full refund any time before I start on your files. Once I've started, if I can't deliver a usable workbook, I'll refund you in full.</p></div>
     </details>
     <details id="about">
       <summary>Who are you?</summary>
-      <div class="ans"><p><span class="ph">{{BIO}}</span></p><p>You can reach me at <a href="mailto:{{EMAIL}}"><span class="ph">{{EMAIL}}</span></a>.</p></div>
+      <div class="ans"><p>I'm Chris. I do one thing: turn property manager statements into a reconciled workbook your CPA can use. I work only from the files you send, check every month against your bank, and list anything I can't resolve on the Exceptions sheet for your CPA rather than guessing. You deal with me directly, from your first email to delivery.</p><p>You can reach me at <a href="mailto:hello@{{DOMAIN}}"><span class="ph">hello@{{DOMAIN}}</span></a>.</p></div>
     </details>
     <details>
       <summary>Will you prepare or file my tax return?</summary>
@@ -286,9 +286,9 @@ footer{margin-top:64px;border-top:1px solid var(--mid);padding:32px 0 48px}
 
 <footer>
   <div class="foot">
-    <div><a class="wordmark" href="#"><span class="ph">{{BRAND}}</span></a></div>
+    <div><a class="wordmark" href="#">Keyclose</a></div>
     <div><h3>Service</h3><ul><li><a href="#sample">Sample</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#faq">FAQ</a></li></ul></div>
-    <div><h3>Company</h3><ul><li><a href="#about">About</a></li><li><a href="mailto:{{EMAIL}}">Contact <span class="ph">{{EMAIL}}</span></a></li></ul></div>
+    <div><h3>Company</h3><ul><li><a href="#about">About</a></li><li><a href="mailto:hello@{{DOMAIN}}">Contact <span class="ph">hello@{{DOMAIN}}</span></a></li></ul></div>
     <div><h3>Legal</h3><ul><li><a href="#privacy">Privacy</a></li><li><a href="#price">Terms</a></li><li><a href="#not-tax-advice">Not tax advice</a></li></ul></div>
   </div>
   <p class="fine">Bookkeeping prepared for your CPA. Not tax advice, tax preparation or tax filing. Workbooks are compiled from the statements and bank exports you supply and are not audited. Your CPA decides how every item is reported. All figures shown on this page are from a sample workbook with fictional data.</p>

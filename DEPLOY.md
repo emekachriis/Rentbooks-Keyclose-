@@ -12,25 +12,16 @@ Cloudflare's menus were checked against its documentation on 26 Nov 2026. If a b
 
 The site must not go live with `{{...}}` showing.
 
-1. You'll need these first:
-   - your brand name (see `launch/names.md`);
-   - your Lemon Squeezy checkout link;
-   - your Tally form link (see `launch/intake-form-fields.md`);
-   - your contact email;
-   - your refund policy (one or two sentences);
-   - a two-to-three-sentence bio;
-   - your domain. If you haven't bought it yet, fill everything else now and come back for `{{DOMAIN}}` after Step 3.
+1. Brand (Keyclose), refund policy, bio and contact email are already filled in. Three placeholders are left:
+   - your Lemon Squeezy checkout link and your Tally form link (set them up with `launch/payments-and-forms-setup.md`);
+   - your domain. Fill the two links now, and come back for `{{DOMAIN}}` after Step 3. The contact email on the page is `hello@{{DOMAIN}}`, so it fills in at the same time.
 2. On GitHub, open the repo, go to `site/index.html` and click the **pencil icon** (Edit).
 3. Press **Ctrl+F** (Cmd+F on a Mac) and search for `{{`. Replace each placeholder everywhere it appears:
 
    | Placeholder | Replace with | Example |
    |---|---|---|
-   | `{{BRAND}}` | brand name | `Keyclose` |
    | `{{CHECKOUT_URL}}` | Lemon Squeezy checkout link | `https://….lemonsqueezy.com/checkout/buy/…` |
    | `{{INTAKE_URL}}` | Tally form link | `https://tally.so/r/…` |
-   | `{{EMAIL}}` | contact email | `hello@yourname.com` |
-   | `{{REFUND_POLICY}}` | your refund policy | |
-   | `{{BIO}}` | your short bio | |
    | `{{DOMAIN}}` | domain only, no `https://` and no `/` | `yourname.com` |
 
 4. Search for `{{` once more: there should be **no results**. (The comment block at the very top of the file lists the placeholder names; you can leave that or delete it.)
@@ -91,6 +82,15 @@ If your card is declined, try another card that allows international USD payment
 
 If you see an "Error 522", the domain was added in DNS by hand instead of through **Custom domains**. Remove the manual record and use **Set up a domain**.
 
+## Step 4b. Make hello@yourdomain receive email (free, 10 min)
+
+1. In the Cloudflare dashboard, open your domain → **Email** → **Email Routing** → **Get started** (or **Enable Email Routing**).
+2. Create the address `hello` and set the destination to your Gmail. Cloudflare sends a verification email to the Gmail: click it.
+3. Let Cloudflare **add the DNS records** it offers (MX and TXT).
+4. Test: from another account, send a message to `hello@yourname.com`. It should arrive in your Gmail.
+
+This only **receives** mail. When you reply from Gmail, the client sees your Gmail address unless you also set up Gmail's "Send mail as", which needs an outgoing mail (SMTP) service. That's fine at the start. Just sign every email "Chris, Keyclose".
+
 ## Step 5. Final checks before you send a single DM
 
 - [ ] `https://yourname.com` loads on your phone, with no `{{` anywhere on the page.
@@ -99,7 +99,7 @@ If you see an "Error 522", the domain was added in DNS by hand instead of throug
 - [ ] Submit the Tally form once yourself with a dummy PDF, then delete that submission.
 - [ ] The sample PDF downloads.
 - [ ] Share your link in a private chat (WhatsApp, for example): the preview should show the green image with the workbook crops.
-- [ ] The email address on the site actually receives mail.
+- [ ] `hello@yourname.com` actually receives mail (Step 4b).
 
 ## Changing the site later
 

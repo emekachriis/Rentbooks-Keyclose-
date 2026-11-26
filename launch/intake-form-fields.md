@@ -19,7 +19,7 @@ Intro text block (put at the top of the form):
 | 1 | Short answer | "Full name" | Required | |
 | 2 | Email | "Email address" | Required | "Use the same email you paid with, so I can match your order." |
 | 3 | Short answer | "Order number" | Optional | "From your payment receipt email. Leave blank if you can't find it." |
-| 4 | Number | "Number of properties" | Required. Min 1, max 30 | "The number of properties you paid for. One property = one address." |
+| 4 | Number | "Number of properties" | Required. Min 1, max 30 | "The number of properties you paid for. One property = one address (a duplex or fourplex at one address counts as one)." |
 | 5 | Long answer | "Your properties" | Required | "One line per property: a short name or the street address, and the property manager. Example: 12 Oak St, Northstar Property Management" |
 | 6 | Long answer | "Property manager name(s)" | Required | "List every property manager who managed any of these properties in 2026, including any you changed from during the year." |
 | 7 | Dropdown | "Year" | Required. One option only: **2026** | "This service covers January to December 2026." |
@@ -41,7 +41,7 @@ Field 14 options (exact wording):
 
 ## Form settings
 
-- **Thank-you page:** "Thanks. I've got your files and will confirm within one business day whether anything is missing. Questions: {{EMAIL}}"
+- **Thank-you page:** "Thanks. I've got your files and will confirm within one business day whether anything is missing. Questions: hello@{{DOMAIN}}"
 - **Self email notifications:** on, to your email, so you know the moment a client submits.
 - **Respondent email:** optional. If you use it, copy the thank-you text into it.
 - **Close form / limit responses:** off.
